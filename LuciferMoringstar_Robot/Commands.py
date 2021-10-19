@@ -109,9 +109,8 @@ async def start(bot, message):
             )
         )
     else:
-        await cmd.reply_photo
-    photo=(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FMaster-Malayalam-Vijay%2Fdp%2FB08TT4SFNJ&psig=AOvVaw28bSZ8pWsg94q7-syv0UmS&ust=1634712572623000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiguqLx1fMCFQAAAAAdAAAAABAJ)
-    caption=START_MSG
+        await message.reply_text(
+            START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
