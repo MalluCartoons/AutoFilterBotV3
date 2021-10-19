@@ -109,9 +109,11 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_text(
-            START_MSG,
-            reply_markup=InlineKeyboardMarkup(
+        await update.reply_photo(
+        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/deffa827beb17557f9055a86ab69b91212a6d70af934cf0ed75a610358c1b3e6._RI_.jpg",
+        caption=START_TEXT.format(update.from_user.first_name),
+        reply_markup=reply_markup,
+        )(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
                 ],[
