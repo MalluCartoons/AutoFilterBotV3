@@ -111,7 +111,7 @@ async def start(bot, message):
     else:
         await message.reply_photo(
         "https://te.legra.ph/file/1064929a142a439a27f0f.jpg",
-        caption=START_MSG.format(message.from_user.first_name)),
+        caption=START_MSG.format(message.from_user.first_name),
         reply_markup=InlineKeyboardMarkup
         (
                 [[
@@ -120,6 +120,7 @@ async def start(bot, message):
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
                 ]]
+        )
         )
         StopPropagation
 
